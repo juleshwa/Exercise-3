@@ -113,6 +113,24 @@ var planetResult = [
   }
 ];
 
+function planetData(planet) {
+  return `
+    
+    <tr>
+        <td>${planet.name}</td>
+        <td>${planet.rotation_period}</td>
+        <td>${planet.orbital_period}</td>
+        <td>${planet.diameter}</td>
+        <td>${planet.climate}</td>
+        <td>${planet.gravity}</td>
+        <td>${planet.terrain}</td>
+        <td>${planet.surface_water}</td>
+        <td>${planet.population}</td>
+    </> 
+    
+    `;
+}
+
 document.getElementById('table').innerHTML = `<table>
 <tr>
     <th>Name</th>
@@ -126,25 +144,6 @@ document.getElementById('table').innerHTML = `<table>
     <th>Population</th>
 </tr>
 
-${planetResult
-  .map(function(planet) {
-    return `
-    
-    <tr>
-        <td>${planet.name}</td>
-        <td>${planet.rotation_period}</td>
-        <td>${planet.orbital_period}</td>
-        <td>${planet.diameter}</td>
-        <td>${planet.climate}</td>
-        <td>${planet.gravity}</td>
-        <td>${planet.terrain}</td>
-        <td>${planet.surface_water}</td>
-        <td>${planet.population}</td>
-    </>
-    
-    
-    `;
-  })
-  .join(' ')}
+${planetResult.map(planetData).join(' ')}
 
 </table>`;
