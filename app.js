@@ -115,7 +115,7 @@ var planetResult = [
 
 function planetData(planet) {
   return `
-    
+
     <tr>
         <td>${planet.name}</td>
         <td>${planet.rotation_period}</td>
@@ -126,8 +126,8 @@ function planetData(planet) {
         <td>${planet.terrain}</td>
         <td>${planet.surface_water}</td>
         <td>${planet.population}</td>
-    </> 
-    
+    </>
+
     `;
 }
 
@@ -147,3 +147,7 @@ document.getElementById('table').innerHTML = `<table>
 ${planetResult.map(planetData).join(' ')}
 
 </table>`;
+
+function search() {
+  return console.log(planetResult);
+}
