@@ -10,14 +10,20 @@
     <div class="container">
       <h1>PLANET LIST from SWAPI</h1>
     </div>
-    <div class="search-field">
+    <div class="sort-filter">
       <input
-        type="text"
-        id="search"
-        name="search"
-        placeholder="Search Planet"
-        class="form-control"
-        onclick="search()"
+        type="button"
+        class="btn-sort"
+        value="sort"
+        name="sort"
+        onclick="sortData()"
+      />
+      <input
+        type="button"
+        class="btn-filter"
+        value="filter"
+        name="filter"
+        onclick="filterData()"
       />
     </div>
     <div id="table"></div>

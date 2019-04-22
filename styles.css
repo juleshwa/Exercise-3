@@ -21,17 +21,20 @@ body {
   color: purple;
 }
 
-.search-field {
+.sort-filter {
   text-align: left;
   width: 100%;
   margin: 0;
   margin: 1.5rem;
 }
 
-.form-control {
-  width: 20rem;
-  height: 2rem;
-  text-align: center;
+.btn-sort,
+.btn-filter {
+  padding: 0.65rem;
+  width: 5rem;
+  background-color: blueviolet;
+  color: bisque;
+  outline: 0;
 }
 
 table,

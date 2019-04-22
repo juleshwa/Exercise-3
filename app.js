@@ -113,6 +113,14 @@ var planetResult = [
   }
 ];
 
+function sortData() {
+  return console.log(planetResult);
+}
+
+function filterData() {
+  return console.log(planetResult);
+}
+
 function planetData(planet) {
   return `
 
@@ -147,7 +155,3 @@ document.getElementById('table').innerHTML = `<table>
 ${planetResult.map(planetData).join(' ')}
 
 </table>`;
-
-function search() {
-  return console.log(planetResult);
-}
